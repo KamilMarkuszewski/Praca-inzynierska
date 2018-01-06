@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92C52B7C-10A6-FFB6-6E1F-2E2F26DF20E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Irrelevant</RootNamespace>
+    <AssemblyName>Irrelvant</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_3_3_0;UNITY_3_3;UNITY_EDITOR;ENABLE_PROFILER;UNITY_WEBPLAYER;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:/programy/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:/programy/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>D:/programy/Unity/Editor/Data/Mono/lib/mono/unity/Boo.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>D:/programy/Unity/Editor/Data/Mono/lib/mono/unity/UnityScript.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\scripts\DatabaseAccess\Battle.cs" />
+    <Compile Include="Assets\scripts\DatabaseAccess\CreateCharacter.cs" />
+    <Compile Include="Assets\scripts\DatabaseAccess\LoadingCharacter.cs" />
+    <Compile Include="Assets\scripts\DatabaseAccess\LoadingChars.cs" />
+    <Compile Include="Assets\scripts\DatabaseAccess\Logout.cs" />
+    <Compile Include="Assets\scripts\DatabaseAccess\SaveCharacter.cs" />
+    <Compile Include="Assets\scripts\DatabaseAccess\SaveCharacterService.cs" />
+    <Compile Include="Assets\scripts\data\PlayerData\MyBackpack.cs" />
+    <Compile Include="Assets\scripts\data\PlayerData\MyChar.cs" />
+    <Compile Include="Assets\scripts\data\MyData.cs" />
+    <Compile Include="Assets\scripts\data\PlayerData\MyChars.cs" />
+    <Compile Include="Assets\scripts\data\PlayerData\MyEq.cs" />
+    <Compile Include="Assets\scripts\data\PlayerData\MyIds.cs" />
+    <Compile Include="Assets\scripts\data\PlayerData\MyPlayer.cs" />
+    <Compile Include="Assets\scripts\data\PlayerData\MySettings.cs" />
+    <Compile Include="Assets\scripts\data\PlayerData\MyStats.cs" />
+    <Compile Include="Assets\scripts\data\PlayerData.cs" />
+    <Compile Include="Assets\scripts\data\PlayerData\MyTempData.cs" />
+    <Compile Include="Assets\scripts\global\ClassEnums.cs" />
+    <Compile Include="Assets\scripts\global\ItemyEnums.cs" />
+    <Compile Include="Assets\scripts\global\Objects.cs" />
+    <Compile Include="Assets\scripts\GUI\ContextMenu.cs" />
+    <Compile Include="Assets\scripts\GUI\guiAuth.cs" />
+    <Compile Include="Assets\scripts\GUI\guiChoose\guiChoose.cs" />
+    <Compile Include="Assets\scripts\GUI\guiChoose\guiChooseDrawPrefabs.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiHelpers\Popup.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItemsAssets\ColorTextures.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItemsAssets\GuiTextures.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItemsAssets\ItemsTextures.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\Actions\AllItems.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\Actions\DragAbleCorElement.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\Actions\DragAbleTableActions.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\Actions\DragAbleTableInit.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\DragAble.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\DragAbleTable.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\DrawHpBar.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\DrawMain.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\GuiInfo.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\ItemsAttr.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\ItemsSpecial.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\MagicAttr.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\pixelMaps\ButtonsMap.cs" />
+    <Compile Include="Assets\scripts\GUI\GuiItems\pixelMaps\MapMain.cs" />
+    <Compile Include="Assets\scripts\GUI\guiLogin.cs" />
+    <Compile Include="Assets\scripts\GUI\Info.cs" />
+    <Compile Include="Assets\scripts\GUI\LeftPanel.cs" />
+    <Compile Include="Assets\scripts\network\AnimationSynchronizer.cs" />
+    <Compile Include="Assets\scripts\network\ControllConnection.cs" />
+    <Compile Include="Assets\scripts\network\NetworkController.cs" />
+    <Compile Include="Assets\scripts\network\NetworkTransform.cs" />
+    <Compile Include="Assets\scripts\network\NetworkTransformReceiver.cs" />
+    <Compile Include="Assets\scripts\network\NetworkTransformSender.cs" />
+    <Compile Include="Assets\scripts\network\PlayerSpawnController.cs" />
+    <Compile Include="Assets\scripts\network\SmartFox.cs" />
+    <None Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" />
+    <None Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js" />
+    <Compile Include="Assets\scripts\prefabsHelpers\chose\changeAnimation.cs" />
+    <Compile Include="Assets\scripts\prefabsHelpers\chose\putChooseChar.cs" />
+    <Compile Include="Assets\scripts\prefabsHelpers\chose\putChoseTerrain.cs" />
+    <Compile Include="Assets\scripts\worlds\ChangeWorlds.cs" />
+    <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+    <None Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\PlatformInputController.js" />
+    <None Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" />
+    <None Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" />
+    <None Include="Assets\Standard Assets\Scripts\Camera Scripts\MouseOrbit.js" />
+    <None Include="Assets\Standard Assets\Scripts\Camera Scripts\SmoothFollow.js" />
+    <None Include="Assets\Standard Assets\Scripts\Camera Scripts\SmoothLookAt.js" />
+    <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
+    <None Include="Assets\Standard Assets\Scripts\General Scripts\DragRigidbody.js" />
+    <Compile Include="Assets\Standard Assets\Scripts\Utility Scripts\CombineChildren.cs" />
+    <Compile Include="Assets\Standard Assets\Scripts\Utility Scripts\MeshCombineUtility.cs" />
+    <None Include="Assets\Standard Assets\Skyboxes\ skybox info.txt" />
+    <Reference Include="SmartFoxClient">
+      <HintPath>Assets\Plugins\SmartFoxClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
